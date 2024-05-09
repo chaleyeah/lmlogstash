@@ -8,6 +8,6 @@
 # If you use a different lm_property you'll use a different translation target. 
 # Below is an example of how the config would look.
 
-NTNX-DEVICEID-CVM: ntnx-######-@-cvm
-Nutanix-Hostname: ntnx-######-@-cvm
-Nutanix-Storage-VM: ntnx-######-@-cvm
+NTNX-DEVICEID-CVM: System_Displayname
+Nutanix-Hostname: System_Displayname
+Nutanix-Storage-VM: System_Displayname
