@@ -1,0 +1,13 @@
+---
+# This file translates the device names of the Nutanix cluster into a hostname that the system will automatically recognize. 
+# The device names may need to be updated if the cluster's primary node changes. 
+# This file is formatted in YAML, so the first item in the list is the original name and the item after the ":" is the translation target. 
+# The translation target is the lm_property that is configured in the 03-nutanix-lmlogs.conf file. 
+# The CVMs are a solid place to start, note also that you will want to add the hostnames of the AHV or ESXi systems, and the storage VMs as well. 
+# In this example ntnx-######-@-cvm is the system.sysname of the nutanix cluster added into LogicMonitor. 
+# If you use a different lm_property you'll use a different translation target. 
+# Below is an example of how the config would look.
+
+NTNX-DEVICEID-CVM: ntnx-######-@-cvm
+Nutanix-Hostname: ntnx-######-@-cvm
+Nutanix-Storage-VM: ntnx-######-@-cvm
